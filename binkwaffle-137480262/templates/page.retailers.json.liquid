@@ -1,0 +1,31 @@
+<div id="page" class="row">
+  
+  
+  <div class="span12 details">
+    <h1 class="p25">{{ page.title }}</h1>
+    
+  </div>
+  
+  <script class="foobar" type="text/x-handlebars-template">
+  {{ #Retailers }}
+    	{{ ContactName }}
+  </script>
+  
+  <script>
+    $(document).ready( function(){
+		var source = $(".foobar").html();
+		var template = Handlebars.compile(source);
+		var retailers = $.getJSON( "{{ 'retailers.json' | asset_url }}", function(data) {
+        	$('body').append(template(data))
+        	retailers = data;
+        	console.log('data', data)
+    	});
+		$('body').append(template(retailers.responseJSON));
+    	
+    });
+    
+    // https://stackoverflow.com/questions/26405657/how-do-i-loop-over-a-json-array-with-handlebars-js-in-a-shopify-store
+    
+  </script>
+  
+</div>

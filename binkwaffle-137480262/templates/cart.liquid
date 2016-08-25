@@ -1,0 +1,188 @@
+<div id="cart">
+  
+  <!-- Begin empty cart -->
+  {% if cart.item_count == 0 %}
+  <div class="row">
+    <div class="span12 expanded-message">
+      <h2>Your cart is empty</h2>
+    </div>
+  </div>
+  <!-- End empty cart -->
+  
+  <!-- Begin cart -->
+  {% else %}
+  <div class="row">
+    <div class="span12">
+      <h1>Your cart</h1>
+      <a class="btn pull-right" href="/collections/all" title="Browse our Catalog">Continue Shopping</a>
+
+      <form action="/cart" method="post" id="cartform">
+                <input type="hidden" name="discount" id="discount" value="" />
+
+        <table>
+          <thead>
+            <tr>
+              <th class="image">&nbsp;</th>
+              <th class="item">&nbsp;</th>
+              <th class="qty">Quantity</th>
+              <th class="price">Price</th>
+              <th class="remove">&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in cart.items %}
+             {% include 'saw_compute_discount' with item.product %}
+        {% include 'saw_variant' with item.variant %}
+
+
+            <tr>
+              <td class="image">
+                <div class="product_image">
+                  <a href="{{ item.url }}">
+                    <img src="{{ item | img_url: 'small' }}"  alt="{{ item.title | escape }}" />
+                  </a>
+                </div>
+              </td>
+              <td class="item">
+                <a href="{{ item.url }}">
+                  <strong>{{ item.product.title }}</strong>
+                  {% if item.product.variants.size > 1 %}
+                  <span class="variant_title">{{ item.variant.title }}</span>
+                  {% endif %}
+                </a>
+              </td>
+              <td class="qty">
+                <input type="text" size="4" name="updates[]" id="updates_{{ item.variant.id }}" value="{{ item.quantity }}" onfocus="this.select();" class="tc item-quantity" 
+                       {% unless item.variant.inventory_management == blank or item.variant.inventory_policy == 'continue' %} max="{{ item.variant.inventory_quantity }}" {% endunless %}
+/>
+              </td>
+              <td class="price">
+                
+              {% if saw_discount == 1 %}
+	           		{{ item.line_price | money }}
+              {% else %}
+                {{saw_variant_price | times: item.quantity | money }}<br>
+<!-- 		<del>{{ saw_variant_compare_at_price  | times: item.quantity | money }}</del> -->
+              {% endif %} 
+
+               </td>
+              <td class="remove"><a href="/cart/change?line={{ forloop.index }}&quantity=0" class="cart">Remove</a></td>
+            </tr>
+            {% endfor %}
+            <tr class="summary">
+              <td class="image">&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td class="price"><span class="total"><strong><span class="saw-cart-original-total">{{ cart.total_price | money }}</span><br>
+<span class="saw-cart-total"></span>
+</strong></span></td>
+              <td>&nbsp;</td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div class="buttons clearfix">
+          
+<div style="text-align: right;">
+	<span class="saw-discount-info "></span>
+  	<span class="saw-extra-note "></span>
+</div>
+
+          
+<!--           {% if cart.total_weight >= 10 %}
+
+          <div class="go-checkout"><input type="image" src="{{ 'button-check-out-now.jpg' | asset_url }}" value="Proceed to Checkout" name="checkout"  /></div>
+
+          {% else %}
+
+          <div class="go-checkout"><img src="{{ 'button-check-out-now-fade-new.jpg' | asset_url }}" border="0" /></div>
+
+          {% endif %} -->
+          
+          <input type="submit" id="checkout" class="btn" name="checkout" value="Checkout" />
+          <input type="submit" id="update-cart" class="btn" name="update" value="Update" />
+        </div>
+        
+        {% if additional_checkout_buttons or settings.display_cart_note %}
+        <div class="row">
+          
+
+{% if customer.tags == blank %}
+          
+          {% if additional_checkout_buttons %}
+          <div class="extra-checkout-buttons span6">            
+            {{ content_for_additional_checkout_buttons }}
+          </div>
+          {% endif %}
+{% else %}
+{% endif %}
+
+          {% if settings.display_cart_note %}
+          <div class="span6">
+            <div class="checkout-buttons clearfix">
+              <label for="note">Add special instructions for your order...</label>
+              <textarea id="note" name="note" rows="10" cols="50">{{ cart.note }}</textarea>
+            </div>
+          </div>
+          {% endif %}
+        </div> 
+        {% endif %}
+        {% endif %}
+
+      </form>
+    </div>
+
+    {% if cart.item_count == 0 %}
+    {% unless settings.featured_products == blank or collections[settings.featured_products].empty? %}
+    <div class="cart-featured">
+      <h3 class="featured-cart-title">Featured Items</h3>
+      {% for product in collections[settings.featured_products].products limit: 4 %}
+<!-- 	    {% include 'product-loop' %} -->
+      {% include 'product-loop-edited' %}
+  	  {% endfor %}
+    </div>
+    {% endunless %}
+    {% endif %}
+
+  </div>
+  <!-- End cart -->
+</div>
+
+
+<script>
+  function SAWOrderNote(note) {
+	if (note.toLowerCase().indexOf("invoice") > -1) {
+		//return ""
+	}
+	note = note.replace("some text to replace", 
+                        "new text");
+ 	return note
+  }
+  function SAWComplete(res) {
+    if (res.warning_note != "") {
+      $("input[name=checkout]").css("display", "none");
+      $("button[name=checkout]").css("display", "none");
+      $("#purchase-benefits").css("display", "none");
+    }
+    return
+  }
+</script>
+ 
+{% include 'saw_cart' %}
+
+<script>
+  if (typeof BuyXSubmit == "function") {
+    var buyx_checkout_selectors = ["input[name='checkout']", "button[name='checkout']", "input[name='goto_pp']", "button[name='goto_pp']", "input[name='goto_gc']", "button[name='goto_gc']", "[href$='checkout']"];
+    window.buyx_cart_global = {{ cart | json }}
+    buyx_checkout_selectors.forEach(function(selector) {
+        jQuery(selector).bind("click", function() {
+          console.log("click")
+            return BuyXSubmit(window.buyx_cart_global, "#updates_{variant_id}");
+        })
+    });
+  }
+/*use appropriate selector for your theme, e.g.
+      return BuyXSubmit({{cart | json}}, "input[data-id={variant_id}]");
+*/
+</script>
+

@@ -1,0 +1,428 @@
+{
+  "Retailers": [
+    {
+      "ContactName": "All About Yarn",
+      "ContactType": "Retailer",
+      "Website": "",
+      "State": "MN",
+      "Email": "allaboutyarn@hotmail.com",
+      "Phone": "763-785-4900"
+    },
+    {
+      "ContactName": "Angora Girls Fiber Arts",
+      "ContactType": "other",
+      "Website": "angoragirls.com",
+      "State": "MN",
+      "Email": "lisa@angoragirls.com",
+      "Phone": "507.205.4945"
+    },
+    {
+      "ContactName": "Black Purl, LLC",
+      "ContactType": "other",
+      "Website": "",
+      "State": "WI",
+      "Email": "blackpurl1@live.com",
+      "Phone": "715-843-7875"
+    },
+    {
+      "ContactName": "Bliss Yarn",
+      "ContactType": "other",
+      "Website": "blissyarns.com",
+      "State": "TN",
+      "Email": "info@blissyarns.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Blue Purl",
+      "ContactType": "other",
+      "Website": "",
+      "State": "NJ",
+      "Email": "thebluepurl@gmail.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Close Knit",
+      "ContactType": "other",
+      "Website": "",
+      "State": "IL",
+      "Email": "closeknit@sbcglobal.net",
+      "Phone": "847-328-6760"
+    },
+    {
+      "ContactName": "Do Ewe Knit",
+      "ContactType": "other",
+      "Website": "doeweknit.com",
+      "State": "NJ",
+      "Email": "karen@doeweknit.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Ewe-Nique Knits",
+      "ContactType": "Retailer",
+      "Website": "ewe-niqueknits.com",
+      "State": "MI",
+      "Email": "marilynandamy@ewe-niqueknits.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Family Arts Needlework Shop",
+      "ContactType": "Retailer",
+      "Website": "familyartsaz.com",
+      "State": "AZ",
+      "Email": "familyarts@familyartsaz.com",
+      "Phone": "602-277-0694"
+    },
+    {
+      "ContactName": "Fibre Space",
+      "ContactType": "Retailer",
+      "Website": "fibrespace.com",
+      "State": "VA",
+      "Email": "danielle@fibrespace.com",
+      "Phone": "703-664-0344"
+    },
+    {
+      "ContactName": "Fiddlehead Yarns",
+      "ContactType": "other",
+      "Website": "",
+      "State": "",
+      "Email": "fiddleheadyarns@wi.rr.com",
+      "Phone": "262-925-6487"
+    },
+    {
+      "ContactName": "Fringe",
+      "ContactType": "Retailer",
+      "Website": "",
+      "State": "CO",
+      "Email": "fringefab@gmail.com",
+      "Phone": "719.539.4006"
+    },
+    {
+      "ContactName": "Gosh Yarn It",
+      "ContactType": "Retailer",
+      "Website": "",
+      "State": "PA",
+      "Email": "",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Haus of Yarn",
+      "ContactType": "Retailer",
+      "Website": "hausofyarn.com",
+      "State": "TN",
+      "Email": "info@hausofyarn.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Hiya Hiya",
+      "ContactType": "Retailer",
+      "Website": "knittingzone.com",
+      "State": "AL",
+      "Email": "mary@knittingzone.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "ImagiKnit",
+      "ContactType": "Retailer",
+      "Website": "imagiknit.com",
+      "State": "CA",
+      "Email": "info@imagiknit.com",
+      "Phone": "415-621-6642"
+    },
+    {
+      "ContactName": "In The Making, LLC",
+      "ContactType": "other",
+      "Website": "shopinthemaking.com",
+      "State": "AL",
+      "Email": "orders@shopinthemaking.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Isabelle's Parlour",
+      "ContactType": "Retailer",
+      "Website": "wickenburg.com",
+      "State": "AZ",
+      "Email": "yarn@wickenburg.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Jessica Knits",
+      "ContactType": "Retailer",
+      "Website": "jessicaknits.com",
+      "State": "AZ",
+      "Email": "tammy@jessicaknits.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Knit 1",
+      "ContactType": "other",
+      "Website": "knit1chgo.com",
+      "State": "IL",
+      "Email": "info@knit1chgo.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Knit New Haven",
+      "ContactType": "other",
+      "Website": "",
+      "State": "CT",
+      "Email": "knitnewhaven@att.net",
+      "Phone": "203-777-5648"
+    },
+    {
+      "ContactName": "Knitche, Inc.",
+      "ContactType": "other",
+      "Website": "knitche.com",
+      "State": "IL",
+      "Email": "kathy@knitche.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Knitter's Nook",
+      "ContactType": "Retailer",
+      "Website": "http:\/\/knittersnookflorida.com\/",
+      "State": "FL",
+      "Email": "knittersnook@yahoo.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Linden Yarn & Textiles, Inc.",
+      "ContactType": "other",
+      "Website": "lindenyarn.com",
+      "State": "MN",
+      "Email": "chrisrknits@lindenyarn.com",
+      "Phone": "952-303-3895"
+    },
+    {
+      "ContactName": "Loops",
+      "ContactType": "other",
+      "Website": "loopsknitting.com",
+      "State": "",
+      "Email": "shelley@brandersinc.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Mosaic Yarn Studio, Ltd.",
+      "ContactType": "Retailer",
+      "Website": "mosaicyarnstudio.com",
+      "State": "IL",
+      "Email": "darlene@mosaicyarnstudio.com",
+      "Phone": "847-390-1013"
+    },
+    {
+      "ContactName": "Nautical Yarn",
+      "ContactType": "Retailer",
+      "Website": "",
+      "State": "MI",
+      "Email": "",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Nina - a well-knit shop",
+      "ContactType": "other",
+      "Website": "ninachicago.com",
+      "State": "IL",
+      "Email": "info@ninachicago.com",
+      "Phone": "773-486-8996"
+    },
+    {
+      "ContactName": "Nina's Department & Variety Store",
+      "ContactType": "Retailer",
+      "Website": "",
+      "State": "WI",
+      "Email": "judyjoel@frontier.com",
+      "Phone": "608-588-2366"
+    },
+    {
+      "ContactName": "Polka Dot Sheep \/ Knit 'n Needle Yarn Shop",
+      "ContactType": "Retailer",
+      "Website": "polkadotsheep.com",
+      "State": "MN",
+      "Email": "info@polkadotsheep.com",
+      "Phone": "406-862-6390"
+    },
+    {
+      "ContactName": "Prairie Yarns",
+      "ContactType": "Retailer",
+      "Website": "",
+      "State": "ND",
+      "Email": "prairieyarnscusts@702com.net",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Salty Sheep",
+      "ContactType": "other",
+      "Website": "",
+      "State": "",
+      "Email": "",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Second Story Knits",
+      "ContactType": "other",
+      "Website": "secondstoryknits.com",
+      "State": "MD",
+      "Email": "biz@secondstoryknits.com",
+      "Phone": "301.652.8688"
+    },
+    {
+      "ContactName": "So Much Yarn",
+      "ContactType": "other",
+      "Website": "",
+      "State": "WA",
+      "Email": "citymouse23@gmail.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "StevenBe & Yarn Garage",
+      "ContactType": "Retailer",
+      "Website": "yarngarage.com",
+      "State": "MN",
+      "Email": "steven@yarngarage.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Stitch",
+      "ContactType": "Retailer",
+      "Website": "stitchdsm.com",
+      "State": "IA",
+      "Email": "info@stitchdsm.com",
+      "Phone": "515-288-0655"
+    },
+    {
+      "ContactName": "The Black Sheep",
+      "ContactType": "Retailer",
+      "Website": "theblacksheep.biz",
+      "State": "CA",
+      "Email": "karen@theblacksheep.biz",
+      "Phone": "760-436-9973"
+    },
+    {
+      "ContactName": "The Frayed Knot",
+      "ContactType": "Retailer",
+      "Website": "",
+      "State": "GA",
+      "Email": "thefrayedknotsav@yahoo.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "The Hillsborough Yarn Shop",
+      "ContactType": "Retailer",
+      "Website": "hillsboroughyarn.com",
+      "State": "NC",
+      "Email": "anne@hillsboroughyarn.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "The Knitter's Edge",
+      "ContactType": "Retailer",
+      "Website": "",
+      "State": "PA",
+      "Email": "theknittersedge@aol.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "The Patchwork Frog",
+      "ContactType": "other",
+      "Website": "",
+      "State": "",
+      "Email": "",
+      "Phone": ""
+    },
+    {
+      "ContactName": "The Yarn Spot, LLC",
+      "ContactType": "Retailer",
+      "Website": "theyarnspot.com",
+      "State": "MD",
+      "Email": "victoria@theyarnspot.com",
+      "Phone": "301-933-9550"
+    },
+    {
+      "ContactName": "Twisted Fiber Art",
+      "ContactType": "Retailer",
+      "Website": "twistedfiberart.com",
+      "State": "MI",
+      "Email": "beth@twistedfiberart.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Unraveled Yarn & Gifts",
+      "ContactType": "Retailer",
+      "Website": "",
+      "State": "AL",
+      "Email": "unraveledyarn@comcast.net",
+      "Phone": "256-349-2533"
+    },
+    {
+      "ContactName": "Wildfiber",
+      "ContactType": "Retailer",
+      "Website": "wildfiber.com",
+      "State": "CA",
+      "Email": "info@wildfiber.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Woolwinders",
+      "ContactType": "other",
+      "Website": "",
+      "State": "",
+      "Email": "amybmurphy@gmail.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Yarn Expressions",
+      "ContactType": "Retailer",
+      "Website": "",
+      "State": "AL",
+      "Email": "yarnexpressions@juno.com",
+      "Phone": "256-881-0260"
+    },
+    {
+      "ContactName": "Yarn Folk",
+      "ContactType": "other",
+      "Website": "yarnfolk.com",
+      "State": "WA",
+      "Email": "ann@yarnfolk.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Yarn Soup",
+      "ContactType": "Retailer",
+      "Website": "yarn-soup.com",
+      "State": "IA",
+      "Email": "sara@yarn-soup.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "YarnMart",
+      "ContactType": "Retailer",
+      "Website": "theyarnmart.com",
+      "State": "AR",
+      "Email": "heather@theyarnmart.com",
+      "Phone": "501-666-6505"
+    },
+    {
+      "ContactName": "Yarnology",
+      "ContactType": "Retailer",
+      "Website": "yarnologymn.com",
+      "State": "MN",
+      "Email": "info@yarnologymn.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Yarns at the Adobe",
+      "ContactType": "other",
+      "Website": "yarnseattheadobe.com",
+      "State": "CA",
+      "Email": "anne@yarnseattheadobe.com",
+      "Phone": ""
+    },
+    {
+      "ContactName": "Yarn on Youree",
+      "ContactType": "other",
+      "Website": "yarnonyouree.com",
+      "State": "LA",
+      "Email": "",
+      "Phone": ""
+    }
+  ]
+}

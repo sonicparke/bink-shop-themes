@@ -1,0 +1,56 @@
+<div class="product span3 adaptive-grid">
+
+
+
+  <div class="image">
+    <a href="{{ product.url }}">
+      <img src="{{ product.type | asset_url }}" alt="{{ product.title }}">
+    </a>
+  </div>
+
+  <div class="details">
+    <a href="{{ product.url }}" class="clearfix">
+      <h4 class="title">{{ product.title }}</h4>
+
+        {% include 'saw_compute_discount' with product %}
+
+
+      {% if customer %}
+      <span class="price">
+
+
+  {% if saw_discount == 1 %}
+          <!-- original prices here -->
+
+      {% if product.available %}
+        {% if product.compare_at_price_max > product.price %}
+<!--           <del>{{ product.compare_at_price | money }}</del> -->
+        {% endif %}
+        {% if product.price_varies %}
+        <small><em>from</em></small>
+        {% endif %}
+        {{ product.price | money }}
+      {% else %}
+        {{ product.price | money }} Sold Out
+      {% endif %}
+  {% else %}
+
+      {% if product.available %}
+<!--           <del>{{ saw_product_compare_at_price | money }}</del> -->
+        {% if product.price_varies %}
+        <small><em>from</em></small>
+        {% endif %}
+        {{ saw_product_price | money }}
+      {% else %}
+        {{ saw_product_price | money }} Sold Out
+      {% endif %}
+  {% endif %}
+
+
+      </span>
+      {% endif%}
+
+    </a>
+  </div>
+
+</div>
